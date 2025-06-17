@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter Egg da Moon - Jogo de Memória</title>
+   <script src="rng.js"></script>
+   <link rel="stylesheet" href="color.css">i
+</head>
+<body>
+    <div class="container">
+        <div class="round-indicator">Rodada: <span id="round-display">0</span>/16</div>
+        
+        <header>
+            <h1>Easter Egg da Moon</h1>
+            <div class="subtitle">Jogo de Memória - Painéis de Computador</div>
+        </header>
+        
+        <div class="instructions">
+            <h2>Instruções do Jogo</h2>
+            <ul>
+                <li>Observe os painéis que piscarão em uma sequência específica</li>
+                <li>Repita a sequência pressionando os painéis na mesma ordem</li>
+                <li>Cada rodada adiciona um novo passo à sequência</li>
+                <li>Complete 16 rodadas para ativar o Easter Egg!</li>
+            </ul>
+        </div>
+        
+        <div class="panels-container">
+            <div class="panel" id="panel-a">
+                <div class="panel-key">A</div>
+                <div class="panel-label">Painel 1</div>
+            </div>
+            <div class="panel" id="panel-s">
+                <div class="panel-key">S</div>
+                <div class="panel-label">Painel 2</div>
+            </div>
+            <div class="panel" id="panel-d">
+                <div class="panel-key">D</div>
+                <div class="panel-label">Painel 3</div>
+            </div>
+            <div class="panel" id="panel-f">
+                <div class="panel-key">F</div>
+                <div class="panel-label">Painel 4</div>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="info-box">
+                <div class="info-title">Rodada Atual</div>
+                <div class="info-value" id="current-round">0/16</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Sequência</div>
+                <div class="info-value" id="sequence-length">0</div>
+            </div>
+            <div class="info-box">
+                <div class="info-title">Pontuação</div>
+                <div class="info-value" id="score">0</div>
+            </div>
+        </div>
+        
+        <div class="message" id="message">Pressione Iniciar para começar o jogo!</div>
+        
+        <div class="controls">
+            <button id="start-btn">
+                <span>Iniciar Jogo</span>
+            </button>
+            <button id="reset-btn">
+                <span>Reiniciar</span>
+            </button>
+        </div>
+        
+        <div class="footer">
+            Baseado no Easter Egg da Moon (Call of Duty: Black Ops Zombies)
+        </div>
+    </div>
+
+</body>
+</html>
